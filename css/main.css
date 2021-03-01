@@ -379,10 +379,10 @@ img {
 }
 
 .hero {
-  width: 480px;
+  min-width: 480px;
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/main-mobile.jpg");
-  background-size: cover;
+  background-size: 100%;
   color: #ffffff;
   background-color: #2F303A;
   background-repeat: no-repeat;
@@ -401,7 +401,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
     background-image: url("../images/main/main-mobile@2x.jpg");
   }
