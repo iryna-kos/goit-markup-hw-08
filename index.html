@@ -28,8 +28,13 @@
                     </li>   
                 </ul>
             </nav>
+            <button type="button" class="burger-btn" data-menu-button> 
+                <svg class="burger-icon" height="40" width="40">
+                    <use href="./images/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
             <ul class="contacts">
-                <li>
+                <li class="mail-link-item">
                     <a class="mail-link link" href="mailto:info@devstudio.com"> 
                         <svg class="mail-icon" height="12" width="16"> 
                             <use href="./images/sprite.svg#envelope-hover"></use>
@@ -40,6 +45,47 @@
                         <svg class="mail-icon" height="16" width="10"> 
                             <use href="./images/sprite.svg#smartphone"></use>
                         </svg> +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="mobile-close" height="40" width="40">
+                    <use href="./images/sprite.svg#mobile-close"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu-nav">
+                <li class="mobile-menu-nav-item">
+                    <a class="mobile-menu-link link" href="#"> <span class="studio" >Студия</span>  </a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a class="mobile-menu-link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu-nav-item">
+                    <a class="mobile-menu-link link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-contacts">
+                <li class="mobile-menu-contacts-tel">
+                    <a class="mobile-menu-nav-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-contacts-mail">
+                    <a class="mobile-menu-nav-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>   
+            </ul>
+            <ul class="mobile-menu-link">
+                <li class="mobile-menu-link-item">
+                    <a href="#" class="mobile-menu-social-item">Instagram</a> 
+                </li>
+                <li class="mobile-menu-link-item">
+                    <a href="#" class="mobile-menu-social-item">Twitter</a> 
+                </li>
+                <li class="mobile-menu-link-item">
+                    <a href="#" class="mobile-menu-social-item">Facebook</a> 
+                </li>
+                <li class="mobile-menu-link-item">
+                    <a href="#" class="mobile-menu-social-item">LinkedIn</a> 
                 </li>
             </ul>
         </div>
@@ -119,12 +165,35 @@
         </section>
 
         <!--OUR-TEAM-->
-        <section class="our-team" >
+       <section class="our-team" >
             <div class="container">
                 <h3 class="section-title">Наша команда</h3>
                 <ul class="team-list"> 
                     <li class="team-item">
-                        <img src="./images/team/team-img1.jpg" alt="продукт дизайнер" height="260" width="270">
+                        <picture>
+                            <source  
+                                srcset="./images/team/team-1-desktop.webp 1x, ./images/team/team-1-desktop@2x.webp 2x" 
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source  
+                                srcset="./images/team/team-1-desktop.jpg 1x, ./images/team/team-1-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)"> 
+
+                            <source  
+                                srcset="./images/team/team-1-tabl.webp 1x, ./images/team/team-1-tabl@2x.webp 2x" 
+                                media="(min-width: 768px)" type="image/webp">  
+                            <source  
+                                srcset="./images/team/team-1-tabl.jpg 1x, ./images/team/team-1-tabl@2x.jpg 2x" 
+                                media="(min-width: 768px)">    
+
+                            <source
+                                srcset="./images/team/team-1-mobile.webp 1x, ./images/team/team-1-mobile@2x.webp 2x" 
+                                media="(max-width: 767px)" type="image/webp">
+                            <source        
+                                srcset="./images/team/team-1-mobile.jpg 1x, ./images/team/team-1-mobile@2x.jpg 2x" 
+                                media="(max-width: 767px)"> 
+                             
+                            <img src="./images/team/team-img1.jpg" alt="designer">
+                        </picture>
                         <div class="team-item-content"> 
                             <h4 class="team-name">Игорь Демьяненко</h4>
                             <p class="team-profession">Product Designer</p>
@@ -161,7 +230,30 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/team/team-img2.jpg" alt="разработчик" height="260" width="270">
+                        <picture>
+                            <source  
+                                srcset="./images/team/team-2-desktop.webp 1x, ./images/team/team-2-desktop@2x.webp 2x" 
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source  
+                                srcset="./images/team/team-2-desktop.jpg 1x, ./images/team/team-2-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)"> 
+
+                            <source  
+                                srcset="./images/team/team-2-tabl.webp 1x, ./images/team/team-2-tabl@2x.webp 2x" 
+                                media="(min-width: 768px)" type="image/webp">  
+                            <source  
+                                srcset="./images/team/team-2-tabl.jpg 1x, ./images/team/team-2-tabl@2x.jpg 2x" 
+                                media="(min-width: 768px)">   
+
+                            <source
+                                srcset="./images/team/team-2-mobile.webp 1x, ./images/team/team-2-mobile@2x.webp 2x" 
+                                media="(max-width: 767px)" type="image/webp">
+                            <source        
+                                srcset="./images/team/team-2-mobile.jpg 1x, ./images/team/team-2-mobile@2x.jpg 2x" 
+                                media="(max-width: 767px)"> 
+
+                            <img src="./images/team/team-img2.jpg" alt="developer">
+                        </picture>
                         <div class="team-item-content"> 
                             <h4 class="team-name"> Ольга Репина</h4>
                             <p class="team-profession">Frontend Developer</p>
@@ -198,7 +290,30 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/team/team-img3.jpg" alt="маркетолог" height="260" width="270">
+                        <picture>
+                            <source  
+                                srcset="./images/team/team-3-desktop.webp 1x, ./images/team/team-3-desktop@2x.webp 2x" 
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source  
+                                srcset="./images/team/team-3-desktop.jpg 1x, ./images/team/team-3-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)"> 
+
+                            <source  
+                                srcset="./images/team/team-3-tabl.webp 1x, ./images/team/team-3-tabl@2x.webp 2x" 
+                                media="(min-width: 768px)" type="image/webp">  
+                            <source  
+                                srcset="./images/team/team-3-tabl.jpg 1x, ./images/team/team-3-tabl@2x.jpg 2x" 
+                                media="(min-width: 768px)">    
+
+                            <source
+                                srcset="./images/team/team-3-mobile.webp 1x, ./images/team/team-3-mobile@2x.webp 2x" 
+                                media="(max-width: 767px)" type="image/webp">
+                            <source        
+                                srcset="./images/team/team-3-mobile.jpg 1x, ./images/team/team-3-mobile@2x.jpg 2x" 
+                                media="(max-width: 767px)"> 
+                           
+                            <img src="./images/team/team-img3.jpg" alt="marketing">
+                        </picture>
                         <div class="team-item-content"> 
                             <h4 class="team-name">Николай Тарасов</h4>
                             <p class="team-profession">Marketing</p>
@@ -235,7 +350,30 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img src="./images/team/team-img4.jpg" alt="дизайнер" height="260" width="270">
+                        <picture>
+                            <source  
+                                srcset="./images/team/team-4-desktop.webp 1x, ./images/team/team-4-desktop@2x.webp 2x" 
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source  
+                                srcset="./images/team/team-4-desktop.jpg 1x, ./images/team/team-4-desktop@2x.jpg 2x" 
+                                media="(min-width: 1200px)"> 
+
+                            <source  
+                                srcset="./images/team/team-4-tabl.webp 1x, ./images/team/team-4-tabl@2x.webp 2x" 
+                                media="(min-width: 768px)" type="image/webp">  
+                            <source  
+                                srcset="./images/team/team-4-tabl.jpg 1x, ./images/team/team-4-tabl@2x.jpg 2x" 
+                                media="(min-width: 768px)">
+
+                            <source
+                                srcset="./images/team/team-4-mobile.webp 1x, ./images/team/team-4-mobile@2x.webp 2x" 
+                                media="(max-width: 767px)" type="image/webp">
+                            <source        
+                                srcset="./images/team/team-4-mobile.jpg 1x, ./images/team/team-4-mobile@2x.jpg 2x" 
+                                media="(max-width: 767px)"> 
+            
+                            <img src="./images/team/team-img4.jpg" alt="uidesigner">
+                        </picture>
                         <div class="team-item-content"> 
                             <h4 class="team-name">Михаил Ермаков</h4>
                             <p class="team-profession">UI Designer</p>
@@ -273,7 +411,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
         <!--REGULAR-CUSTOMERS-->
         <section class="regular-customers">
@@ -328,55 +466,57 @@
     </main>
     <footer class="contact">
         <div class="container">
-            <div class="footer-contact">
-                <a class="logo" href="/"> <span class="logo-one">Web</span><span class="logo-two-footer" >Studio</span></a>
-                <address class="contact-footer">
-                    <ul class="contact-footer-list">
-                        <li class="contact-footer-list-item">
-                            <a class="contact-adress" href="https://goo.gl/maps/8Z3FRxRc7HxKLj288" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
-                        </li>
-                        <li class="contact-footer-list-item">
-                            <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="contact-footer-list-item">
-                            <a class="contact-phone" href="tel:+380961111111">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address> 
-            </div>
-            <div class="footer-social">
-                    <p class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</p>
-                    <ul class="footer-link">
-                        <li class="footer-link-item">
-                            <a class="footer-link-item-social link" href="">
-                                <svg class="footer-link-networks">
-                                    <use href="./images/sprite.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-link-item">
-                            <a class="footer-link-item-social link" href="">
-                                <svg class="footer-link-networks">
-                                    <use href="./images/sprite.svg#twitter"></use>
-                                </svg>
-                            </a>    
-                        </li>
-                        <li class="footer-link-item">
-                            <a class="footer-link-item-social link" href="">
-                                <svg class="footer-link-networks">
-                                    <use href="./images/sprite.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-link-item">
-                            <a class="footer-link-item-social link" href="">
-                                <svg class="footer-link-networks">
-                                    <use href="./images/sprite.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-            </div>
+            <div class="footer-tablet">
+                <div class="footer-contact">
+                    <a class="logo" href="/"> <span class="logo-one">Web</span><span class="logo-two-footer" >Studio</span></a>
+                    <address class="contact-footer">
+                        <ul class="contact-footer-list">
+                            <li class="contact-footer-list-item">
+                                <a class="contact-adress" href="https://goo.gl/maps/8Z3FRxRc7HxKLj288" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="contact-footer-list-item">
+                                <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="contact-footer-list-item">
+                                <a class="contact-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address> 
+                </div>
+                <div class="footer-social">
+                        <p class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                        <ul class="footer-link">
+                            <li class="footer-link-item">
+                                <a class="footer-link-item-social link" href="">
+                                    <svg class="footer-link-networks">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-link-item">
+                                <a class="footer-link-item-social link" href="">
+                                    <svg class="footer-link-networks">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>    
+                            </li>
+                            <li class="footer-link-item">
+                                <a class="footer-link-item-social link" href="">
+                                    <svg class="footer-link-networks">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-link-item">
+                                <a class="footer-link-item-social link" href="">
+                                    <svg class="footer-link-networks">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </div> 
             <div class="footer-mailing">
                 <form class="footer-form">
                         <p class="footer-form-name"> ПОДПИШИТЕСЬ НА РАССЫЛКУ</p> 
@@ -446,6 +586,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

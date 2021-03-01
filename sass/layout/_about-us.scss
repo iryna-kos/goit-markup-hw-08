@@ -1,53 +1,67 @@
-.about {
-    padding-bottom: 94px;
-    
-    & .container {
-        display: block;
-        align-items: center;
+@media screen and (max-width: 767px) {
+    .about .container {
+        display: none;
     }
 }
 
-.section-list {
-    display: flex;
-    justify-content: space-between;
-    
-    &-item {
-        position: relative;
+@media screen and (min-width: 768px) {
+    .about .container {
+        display: none;
     }
-    
-    &-text {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: rgba(47, 48, 58, 0.8);
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 1.14;
-        font-style: normal;
+}
+
+@media screen and (min-width: 1200px) {
+    .about {
+        padding-bottom: 94px;
+        
+        & .container {
+            display: block;
+            align-items: center;
+        }
+    }
+
+    .section-list {
+        display: flex;
+        justify-content: space-between;
+        
+        &-item {
+            position: relative;
+        }
+        
+        &-text {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(47, 48, 58, 0.8);
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.14;
+            font-style: normal;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            height: 70px;
+            padding-top: 27px;
+            padding-bottom: 27px; 
+        }
+
+    }
+
+    .section-list-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .section-title {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #FFFFFF;
-        height: 70px;
-        padding-top: 27px;
-        padding-bottom: 27px; 
     }
-
-}
-
-.section-list-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.section-title {
-    color: var(--primary);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.section-title {
-    margin-bottom: 50px;
-    text-align: center;
+    .section-title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
 }

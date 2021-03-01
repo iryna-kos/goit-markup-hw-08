@@ -1,25 +1,9 @@
-.benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.preference {
-    display: flex;
-    justify-content: space-between;
-}
-
-.preference-item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .preference-icon {
-  fill: var(--primary);
-}
+    fill: var(--primary);
+  }
 
 .preference-item-box {
     display: flex;
-    width: 270px;
-    height: 120px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
@@ -42,3 +26,77 @@
         letter-spacing: 0.03em; 
     }
 }
+
+
+@media screen and (max-width: 767px) {
+    .benefits {
+            padding-top: 60px;
+            padding-bottom: 60px;
+    }
+    .preference {
+            display: flex;
+            flex-direction: column;
+    }
+    
+    .preference-item:not(:last-child) {
+            margin-bottom: 30px;
+    }
+    
+    .preference-item-box {
+            width: 450px;
+            height: 120px;
+    }
+    
+    .benefits-title {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .preference {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .preference-item-box {
+        width: 354px;
+        height: 120px;
+    }
+
+    .preference-item {
+        width: 354px;
+        height: 251px;
+        margin: 15px;
+    }
+
+    .benefits {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .benefits {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .preference {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+
+    .preference-item-box {
+        width: 270px;
+        height: 120px;
+    }
+}
+
+
+
+
+
+
+
