@@ -25,6 +25,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
+    text-align: center;
     
     &:not(:last-child) {
         margin-bottom: 9px;
@@ -89,7 +90,7 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: normal;
-    }
+}
 
 .footer-button::after {
     content: url(../images/icon-telegram.svg);
@@ -136,7 +137,7 @@
         margin-bottom: 60px;
     }
 
-    .footer-title {
+    .footer-logo {
         text-align: center;
     }
 
@@ -167,7 +168,6 @@
     }
 
     .footer-contact {
-        margin-left: 76px;
         margin-right: 165px;
     }
 
@@ -177,9 +177,12 @@
 
     .contact-footer-list {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
     }
 
+    .footer-title {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -197,6 +200,7 @@
 
     .contact-footer-list {
         padding-left: 0;
+        align-items: flex-start;
     }
     
     .footer-social {
@@ -244,6 +248,14 @@
     .footer-link-item-social:hover, 
     .footer-link-item-social:focus {
        background-color: var(--accent-color);
+    }
+
+    .footer-title {
+        text-align: start;
+    }
+
+    .footer-logo {
+        text-align: start;
     }
 }
 

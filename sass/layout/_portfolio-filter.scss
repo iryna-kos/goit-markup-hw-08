@@ -14,10 +14,7 @@
     border-radius: 2px;
 }
 
-// .filter {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
+
 
 // .filter-content {
 //     display: flex;
@@ -100,5 +97,14 @@
 
     .portfolio::after {
         margin-bottom: -31px;
+    }
+
+    .filter {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .filter-content {
+        margin-bottom: 34px;
     }
 }
