@@ -176,6 +176,12 @@ img {
   .contacts {
     display: none;
   }
+  .mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
   .mobile-menu-nav {
     display: flex;
     flex-direction: column;
@@ -198,7 +204,6 @@ img {
   .mobile-menu-contacts {
     display: flex;
     flex-direction: column;
-    margin-top: 302px;
     margin-bottom: 64px;
   }
   .mobile-menu-nav-tel {
@@ -938,6 +943,9 @@ img {
     justify-content: center;
     flex-direction: column;
   }
+  .contact {
+    min-width: 480px;
+  }
   .contact-footer-list {
     display: flex;
     align-items: center;
@@ -971,11 +979,17 @@ img {
   .footer-form-name {
     text-align: center;
   }
+  .footer-title {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .mail-footer-form {
     width: 450px;
+  }
+  .contact {
+    width: auto;
   }
   .footer-tablet {
     display: flex;

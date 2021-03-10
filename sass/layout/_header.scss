@@ -4,8 +4,6 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-
-
 @media screen and (max-width: 767px) {
 
     .navigation-list {
@@ -54,6 +52,13 @@
         display: none;
     }
 
+    .mobile-menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
     .mobile-menu-nav {
        display: flex;
        flex-direction: column;
@@ -67,6 +72,7 @@
         letter-spacing: 0.02em;
         color: var(--primary);
         text-decoration: none; 
+
         
         &:hover,
         &:focus {
@@ -82,7 +88,6 @@
     .mobile-menu-contacts {
         display: flex;
         flex-direction: column;
-        margin-top: 302px;
         margin-bottom: 64px;
     }
 

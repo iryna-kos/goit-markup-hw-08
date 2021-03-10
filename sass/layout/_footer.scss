@@ -113,6 +113,10 @@
         flex-direction: column;
     }
 
+    .contact {
+        min-width: 480px;
+    }
+
     .contact-footer-list {
         display: flex;
         align-items: center;
@@ -154,11 +158,19 @@
     .footer-form-name {
         text-align: center;
     }
+
+    .footer-title {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .mail-footer-form {
         width: 450px;
+    }
+
+    .contact {
+        width: auto;
     }
 
     .footer-tablet {

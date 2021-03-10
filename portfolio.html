@@ -52,40 +52,45 @@
                     <use href="./images/sprite.svg#mobile-close"></use>
                 </svg>
             </button>
-
-            <ul class="mobile-menu-nav">
-                <li class="mobile-menu-nav-item">
-                    <a class="mobile-menu-link link" href="./index.html"> <span class="studio" >Студия</span>  </a>
-                </li>
-                <li class="mobile-menu-nav-item">
-                    <a class="mobile-menu-link link" href="#">Портфолио</a>
-                </li>
-                <li class="mobile-menu-nav-item">
-                    <a class="mobile-menu-link link" href="#">Контакты</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu-contacts">
-                <li class="mobile-menu-contacts-tel">
-                    <a class="mobile-menu-nav-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="mobile-menu-contacts-mail">
-                    <a class="mobile-menu-nav-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>   
-            </ul>
-            <ul class="mobile-menu-link">
-                <li class="mobile-menu-link-item">
-                    <a href="#" class="mobile-menu-social-item">Instagram</a> 
-                </li>
-                <li class="mobile-menu-link-item">
-                    <a href="#" class="mobile-menu-social-item">Twitter</a> 
-                </li>
-                <li class="mobile-menu-link-item">
-                    <a href="#" class="mobile-menu-social-item">Facebook</a> 
-                </li>
-                <li class="mobile-menu-link-item">
-                    <a href="#" class="mobile-menu-social-item">LinkedIn</a> 
-                </li>
-            </ul>
+            <div class="mobile-menu-container">
+                <div class="mobile-menu-container1">
+                    <ul class="mobile-menu-nav">
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-link link" href="./index.html"> <span class="studio" >Студия</span>  </a>
+                        </li>
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-link link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-link link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-container2">
+                    <ul class="mobile-menu-contacts">
+                        <li class="mobile-menu-contacts-tel">
+                            <a class="mobile-menu-nav-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu-contacts-mail">
+                            <a class="mobile-menu-nav-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>   
+                    </ul>
+                    <ul class="mobile-menu-link">
+                        <li class="mobile-menu-link-item">
+                            <a href="#" class="mobile-menu-social-item">Instagram</a> 
+                        </li>
+                        <li class="mobile-menu-link-item">
+                            <a href="#" class="mobile-menu-social-item">Twitter</a> 
+                        </li>
+                        <li class="mobile-menu-link-item">
+                            <a href="#" class="mobile-menu-social-item">Facebook</a> 
+                        </li>
+                        <li class="mobile-menu-link-item">
+                            <a href="#" class="mobile-menu-social-item">LinkedIn</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -427,7 +432,9 @@
         <div class="container">
             <div class="footer-tablet">
                 <div class="footer-contact">
-                    <a class="logo" href="/"> <span class="logo-one">Web</span><span class="logo-two-footer" >Studio</span></a>
+                    <div class="footer-logo">
+                        <a class="logo" href="/"> <span class="logo-one">Web</span><span class="logo-two-footer" >Studio</span></a>
+                    </div>
                     <address class="contact-footer">
                         <ul class="contact-footer-list">
                             <li class="contact-footer-list-item">
@@ -490,7 +497,7 @@
                 </form>
             </div>
         </div>   
-    </footer>
+    </footer> 
     <script src="./js/mobile-menu.js"></script>   
 </body>
 </html>
